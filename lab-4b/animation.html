@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Анимированный вариант</title>
+</head>
+<!-- Стили обеспечивающие работу механизма -->
+<style>
+	header nav ul ul {
+		margin-top: -9999px;
+	}
+	header nav ul li:hover > ul {
+		margin-top: 0;
+	}
+</style>
+<!-- / Стили обеспечивающие работу механизма -->
+
+<!-- Внешний вид -->
+<style>
+	* {
+		outline: none;
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		/*transition: .3s;*/
+		font-family: Helveica, Arial, sans-serif;
+		font-size: 15px;
+		font-weight: 500;
+	}
+	header {
+		width: 1200px;
+		margin: 0 auto;
+	}
+	a,
+	span {
+		display: block;
+		padding: 10px 15px;
+		text-decoration: none;
+		background-color: #4b8255;
+		color: #fff;
+		transition: .5s;
+		border: 2px solid #4b8255;
+	}
+	a:hover,
+	span:hover {
+		background-color: #fff;
+		color: #4b8255;
+		border: 2px solid #fff;
+	}
+	header nav ul {
+		list-style: none;
+		background-color: #4b8255;
+	}
+	header nav ul li {
+		display: inline-block;
+		position: relative;
+	}
+	header nav > ul > li > ul,
+	header nav > ul ul {
+		position: absolute;
+	}
+	header nav > ul ul ul {
+		margin-left: 100%;
+		top: 0;
+	}
+	header nav > ul ul li {
+		width: 250px;
+	}
+</style>
+<!-- / Внешний вид -->
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Элемент 1</a></li>
+				<li><a href="#">Элемент 2</a></li>
+				<li><a href="#">Элемент 3</a></li>
+				<li>
+					<span>Элемент 4</span>
+					<ul>
+						<li><a href="#">Элемент 1</a></li>
+						<li>
+							<span>Элемент 2</span>
+							<ul>
+								<li><a href="#">Элемент 1</a></li>
+								<li><a href="#">Элемент 2</a></li>
+								<li><a href="#">Элемент 3</a></li>
+								<li><a href="#">Элемент 4</a></li>
+								<li><a href="#">Элемент 5</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Элемент 3</a></li>
+					</ul>
+				</li>
+				<li>
+					<span>Элемент 5</span>
+					<ul>
+						<li><a href="#">Элемент 1</a></li>
+						<li><a href="#">Элемент 2</a></li>
+						<li><a href="#">Элемент 3</a></li>
+						<li>
+							<span>Элемент 4</span>
+							<ul>
+								<li><a href="#">Элемент 1</a></li>
+								<li><a href="#">Элемент 2</a></li>
+								<li><a href="#">Элемент 3</a></li>
+								<li><a href="#">Элемент 4</a></li>
+								<li><a href="#">Элемент 5</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">Элемент 6</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+
+</body>
+</html>
